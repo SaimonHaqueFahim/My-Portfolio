@@ -1,0 +1,40 @@
+/* Style for the logo */
+.logo {
+  position: absolute;
+  top: -18px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+  width: 170px; /* Adjust the width of the logo as needed */
+  height: auto;
+  z-index: 1; /* Ensure the logo appears above other content */
+}
+
+/* Style for the header container */
+.container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Style for the header text */
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Style for the navigation menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}

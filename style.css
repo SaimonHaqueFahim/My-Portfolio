@@ -1,0 +1,414 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  text-align: center; /* Center-align the h1 text */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+            color: #f39c12;
+        }
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the social media links */
+.social-media a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+#typing-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    color: white; /* Set the default text color to white */
+}
+
+#typing-text .orange {
+    color: orange; /* Set the color for "Saimon Haque Fahim" to orange */
+}
+
+#typing-text .blue {
+    color: blue; /* Set the color for "Computer Science Engineer" to blue */
+}
+
+/* Add your existing CSS styles here */
+
+/* Styling for the boundary boxes */
+
+.picture-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Optional: Center the container horizontally */
+    max-width: 100%; /* Ensure the container does not exceed its parent's width */
+}
+
+#profile-picture {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Auto adjust height to maintain aspect ratio */
+}
+
+
+.intro-box
+ {
+    border: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-box-color {
+    background-color: #ffccff; /* Replace with the desired background color code */
+}
+
+/* Center-align text in the boxes */
+.intro-box h2
+{
+    text-align: center;
+}
+
+/* Portfolio section background */
+#portfolio {
+    background-color: #f9f9f9; /* Set a light gray background color */
+    padding: 40px 0; /* Add some spacing */
+    background-image: url('Images/19114062_6056949.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the tabbed navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tablink {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tablink:hover {
+    background-color: #555;
+}
+
+/* Hide all tab content by default */
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Style for the active tab */
+.active {
+    display: block;
+}
+
+
+
+/* Styling for the boundary boxes */
+.boundary-box {
+    background-color: #ccccff; /* Set a white background color for each box */
+    border: 1px solid #ccc; /* Add a light gray border */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* Give a border radius to the images within Achievements and Awards box */
+.boundary-box img {
+    border-radius: 8px;
+}
+
+
+/* Style headers and paragraphs */
+h2 {
+    font-size: 24px; /* Increase the font size for section headings */
+    color: #333; /* Set a dark text color */
+    margin-bottom: 10px; /* Add some spacing at the bottom of headings */
+}
+
+p {
+    font-size: 16px; /* Set a slightly larger font size for paragraphs */
+}
+
+
+/* Styling for the skills section */
+.skills {
+    margin-top: 40px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Style for the show table button */
+.show-table-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.show-table-button:hover {
+    background-color: #555;
+}
+
+/* Style for the experience table */
+#experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#experience-table th,
+#experience-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#experience-table th {
+    background-color: #333;
+    color: white;
+}
+
+
+/* Style for passion buttons */
+.passion-button {
+    background-color: #ff5733; /* Choose your desired background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.passion-button:hover {
+    background-color: #ff3300; /* Change the background color on hover */
+}
+
+/* Style for interest buttons */
+.interest-button {
+    background-color: #3399ff; /* Choose your desired background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interest-button:hover {
+    background-color: #0077b3; /* Change the background color on hover */
+}
+
+
+/* Add this to your style.css */
+
+/* Container for achievement boxes */
+.achievement-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the box width as needed */
+    gap: 20px; /* Add spacing between boxes */
+    max-width: 960px; /* Limit the container width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+/* Style for each achievement box */
+.achievement-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.achievement-box h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.achievement-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* Style for the Educational Background tab content */
+#eduTab .boundary-box {
+    background-color: #f9f9f9; /* Set a light gray background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the section title */
+#eduTab h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for each educational level (e.g., SECONDARY SCHOOL CERTIFICATE) */
+#eduTab h3 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Style for the educational institution and result */
+#eduTab p {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Style for the strong (e.g., Institute, Group, Result) */
+#eduTab strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the border around each educational level */
+#eduTab ul {
+    border: 2px solid #333;
+    padding: 15px;
+    border-radius: 8px;
+    list-style-type: none;
+}
+
+/* Style for the list items inside each educational level */
+#eduTab ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Style the resume download link */
+.resume-link a {
+    display: inline-block;
+    background-color: #007bff; /* Set a blue background color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the resume download link */
+.resume-link a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style for the homepage background */
+#home {
+    background-image: url('Images/cosmic-background-with-colorful-laser-lights-perfect-digital-wallpaper.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Adjust the padding as needed */
+    height: 400px;
+}
+
+#home h2 {
+    font-size: 36px;
+}
+
+.about-bg {
+    background-image: url('Images/9694001_4249454.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This keeps the background fixed while scrolling */
+}

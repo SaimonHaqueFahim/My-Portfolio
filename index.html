@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saimon Haque | Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="logo.css" />
+    <link rel="stylesheet" type="text/html" href="index.html" />
+    <link rel="stylesheet" type="text/html" href="contact.html" />
+    <link rel="stylesheet" type="text/html" href="about.html" />
+
+    <script src="https://kit.fontawesome.com/718bb57604.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <img src="Images/Black_Gold_Luxury_Initial_Jewelry_Shop_Logo-removebg-preview_c.png" alt="Logo" class="logo">
+          <h1>Fahim's Showcase</h1>
+          <ul>
+            <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="portfolio.html"><i class="fa-solid fa-list"></i> Portfolio</a></li>
+            <li><a href="contact.html"> <i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="news.html"><i class="fa-solid fa-newspaper"></i> News</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="home-bg">
+        <h2><span id="typing-text"></span></h2>
+      </div>
+    </section>
+
+    <script>
+      const text =
+        "Welcome to my creative world.<br><br>I'm <span class='orange'>Saimon Haque Fahim</span>, a <span class='blue'>Computer Science Engineer</span> with a passion.<br><br>Explore my work, and let's bring your ideas to life.<br><br>Thanks for visiting my Portfolio website.";
+      const typingTextElement = document.getElementById("typing-text");
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < text.length) {
+          if (text.charAt(charIndex) === "<") {
+            const endIndex = text.indexOf(">", charIndex);
+            if (endIndex !== -1) {
+              typingTextElement.innerHTML += text.substring(
+                charIndex,
+                endIndex + 1
+              );
+              charIndex = endIndex + 1;
+            }
+          } else {
+            if (
+              text.substring(charIndex, charIndex + 25) === "Saimon Haque Fahim"
+            ) {
+              typingTextElement.innerHTML +=
+                "<span class='orange'>" +
+                text.substring(charIndex, charIndex + 25) +
+                "</span>";
+              charIndex += 25;
+            } else if (
+              text.substring(charIndex, charIndex + 26) ===
+              "Computer Science Engineer"
+            ) {
+              typingTextElement.innerHTML +=
+                "<span class='blue'>" +
+                text.substring(charIndex, charIndex + 26) +
+                "</span>";
+              charIndex += 26;
+            } else {
+              typingTextElement.innerHTML += text.charAt(charIndex);
+              charIndex++;
+            }
+          }
+          setTimeout(type, 50); // Adjust the typing speed here (in milliseconds)
+        }
+      }
+
+      type(); // Start the typing animation
+    </script>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Saimon Haque Fahim</p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href="https://www.youtube.com/yourprofile" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
